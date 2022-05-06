@@ -1,0 +1,22 @@
+{
+    "name": "JiSho search",
+    "version": "1.0",
+    "manifest_version": 23,
+    "description": "Search selected text in JiSho.org",
+    "permissions": [
+        "contextMenus"
+    ],
+    "app": {
+        "background": {
+            "scripts": [
+                "main.js"
+            ]
+        }
+    },
+    "icons": {
+        "16": "icons/jisho16x16.png",
+        "32": "icons/jisho32x32.png",
+        "48": "icons/jisho48x48.png",
+        "128": "icons/jisho128x128.png"
+    }
+}
