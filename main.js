@@ -1,9 +1,7 @@
-
-chrome.runtime.onInstalled.addListener(function () {
-    chrome.contextMenus.create({
-        title: 'A: ',
-        type: 'normal',
-        id: 'As',
-        contexts: ['all']
-    });
+chrome.contextMenus.create({
+    title: 'Search in Jisho.org',
+    contexts: ['selection'],
+    onclick: function (params) {
+        chrome.tabs.create({ url: 'https://jisho.org/search/' + params.selectionText });
+    }
 });
